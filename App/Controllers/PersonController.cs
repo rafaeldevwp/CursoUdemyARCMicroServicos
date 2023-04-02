@@ -1,13 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace App.Controllers;
 
 [ApiController]
 [Route("Api/v1/Person")]
 public class PersonController : ControllerBase
 {
-
 
 [HttpGet]
 public async Task<IActionResult> Get(){
@@ -32,8 +30,5 @@ public async Task<IActionResult> Post([FromBody] Person person){
 
     return Ok(person);
 }
-
-
-
 
 }
